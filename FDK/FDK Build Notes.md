@@ -1,6 +1,6 @@
-# FDK Build Notes v2.5.
+# FDK Build Notes v2.5
 
-v1.05 Sep 18 2014
+v1.05
 
 ## FDK build layout
 
@@ -26,7 +26,7 @@ The libraries are grouped under the main directory:
 			api/
 			source/
 ```
-with sub-directories for `build/` and `lib/` being the same as for the program `build/` and `exe/` directories.
+The sub-directories for `build/` and `lib/` being the same as for the program `build/` and `exe/` directories.
 
 ### Special cases
 
@@ -111,7 +111,6 @@ cp site-packages/FontTools/fontTools/misc/xmlWriter.py site-packages/FontTools/x
 First install the ufo3 branch of fontMath:
 
 ```sh
-
 git clone -b ufo3 https://github.com/typesupply/fontMath.git;
 cd fontMath; 
 AFDKOPython setup.py install;
@@ -151,7 +150,7 @@ mv /tmp/LICENSE.txt .;
 ```
 Manually create the file "mutatorMath-master.pth", and put in it the relative path to the mutatorMath-master directory, e.g just  the line "mutatorMath-master".
 
-In the for the osx, win and Linux AFDKOPython directories, check the path references in all the *.pth files in `FDK/Tools/osx/Python/AFDKOPython27/lib/python2.7/site-packages` are all relative to the site-packages directory.
+In the AFDKOPython directory, check the path references in all the *.pth files in `FDK/Tools/osx/Python/AFDKOPython27/lib/python2.7/site-packages` are all relative to the site-packages directory.
 
 ## Testing/building systems.
 
